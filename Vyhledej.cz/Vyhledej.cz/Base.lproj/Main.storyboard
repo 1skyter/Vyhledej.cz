@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" id="BYZ-38-t0r" customClass="LogInViewController" customModule="Vyhledej_cz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIi-XI-Aw8">
+                                <rect key="frame" x="20" y="48" width="50" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UK" translatesAutoresizingMaskIntoConstraints="NO" id="9MS-Cu-cVx">
+                                <rect key="frame" x="20" y="48" width="50" height="44"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vyhledej.cz.removedBG" translatesAutoresizingMaskIntoConstraints="NO" id="IX5-Gi-vZy">
+                                <rect key="frame" x="157" y="149" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0wV-Uv-nkN"/>
+                                    <constraint firstAttribute="height" constant="100" id="lO9-e0-T31"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mailová adresa" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8V5-Bm-LkO">
+                                <rect key="frame" x="20" y="379" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aXS-Wp-RAr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ffq-h0-iSm"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Heslo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RP8-fU-W3J">
+                                <rect key="frame" x="20" y="432" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1hB-DN-pZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rjf-yK-lbd"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Přihlásit se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-Wh-G7a">
+                                <rect key="frame" x="20" y="485" width="374" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-yu-eoM">
+                                <rect key="frame" x="20" y="817" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" systemColor="opaqueSeparatorColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vytvořit nový účet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOZ-5n-NJ1">
+                                <rect key="frame" x="20" y="817" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y4-Mg-aGY">
+                                <rect key="frame" x="20" y="485" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NqS-0V-nUZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.2117646933" green="0.48235297199999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="RP8-fU-W3J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="00z-QX-RlO"/>
+                            <constraint firstAttribute="trailing" secondItem="ZIi-XI-Aw8" secondAttribute="trailing" constant="344" id="312-zy-Pv0"/>
+                            <constraint firstItem="IX5-Gi-vZy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="157" id="6xd-It-NF4"/>
+                            <constraint firstItem="1Y4-Mg-aGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="98t-DF-piO"/>
+                            <constraint firstItem="C7X-yu-eoM" firstAttribute="top" secondItem="KC8-Wh-G7a" secondAttribute="bottom" constant="287" id="AlR-tI-n8q"/>
+                            <constraint firstItem="ZIi-XI-Aw8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="CuG-QJ-O8E"/>
+                            <constraint firstAttribute="bottom" secondItem="C7X-yu-eoM" secondAttribute="bottom" constant="44" id="G8o-yO-VpO"/>
+                            <constraint firstAttribute="trailing" secondItem="IX5-Gi-vZy" secondAttribute="trailing" constant="157" id="ISh-Zb-6Nx"/>
+                            <constraint firstItem="RP8-fU-W3J" firstAttribute="top" secondItem="8V5-Bm-LkO" secondAttribute="bottom" constant="8" id="Iwp-vR-Rqx"/>
+                            <constraint firstItem="9MS-Cu-cVx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="Jp1-6f-4CC"/>
+                            <constraint firstAttribute="bottom" secondItem="9MS-Cu-cVx" secondAttribute="bottom" constant="804" id="KSM-r0-KcH"/>
+                            <constraint firstItem="C7X-yu-eoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QPD-KS-4ux"/>
+                            <constraint firstAttribute="trailing" secondItem="9MS-Cu-cVx" secondAttribute="trailing" constant="344" id="QsL-za-OL7"/>
+                            <constraint firstItem="hOZ-5n-NJ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="UHc-p5-oHT"/>
+                            <constraint firstAttribute="trailing" secondItem="8V5-Bm-LkO" secondAttribute="trailing" constant="20" id="W4e-uO-Zb2"/>
+                            <constraint firstItem="KC8-Wh-G7a" firstAttribute="top" secondItem="RP8-fU-W3J" secondAttribute="bottom" constant="8" id="ZlP-GG-Bdd"/>
+                            <constraint firstAttribute="bottom" secondItem="ZIi-XI-Aw8" secondAttribute="bottom" constant="804" id="crK-r0-Ehr"/>
+                            <constraint firstItem="9MS-Cu-cVx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ds5-Ld-X5b"/>
+                            <constraint firstItem="C7X-yu-eoM" firstAttribute="top" secondItem="1Y4-Mg-aGY" secondAttribute="bottom" constant="287" id="g7d-so-Vz5"/>
+                            <constraint firstItem="IX5-Gi-vZy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="149" id="gXW-Wr-kub"/>
+                            <constraint firstAttribute="trailing" secondItem="RP8-fU-W3J" secondAttribute="trailing" constant="20" id="j5r-MW-D6e"/>
+                            <constraint firstAttribute="trailing" secondItem="C7X-yu-eoM" secondAttribute="trailing" constant="20" id="jGE-O6-8cH"/>
+                            <constraint firstItem="8V5-Bm-LkO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ney-hQ-GCf"/>
+                            <constraint firstItem="1Y4-Mg-aGY" firstAttribute="top" secondItem="RP8-fU-W3J" secondAttribute="bottom" constant="8" id="pQL-2v-M3n"/>
+                            <constraint firstAttribute="bottom" secondItem="hOZ-5n-NJ1" secondAttribute="bottom" constant="44" id="qIS-9w-4r5"/>
+                            <constraint firstAttribute="trailing" secondItem="KC8-Wh-G7a" secondAttribute="trailing" constant="20" id="rau-ZV-vi4"/>
+                            <constraint firstItem="ZIi-XI-Aw8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sRq-Ov-PQb"/>
+                            <constraint firstAttribute="trailing" secondItem="1Y4-Mg-aGY" secondAttribute="trailing" constant="20" id="tWG-WZ-9hR"/>
+                            <constraint firstAttribute="trailing" secondItem="hOZ-5n-NJ1" secondAttribute="trailing" constant="20" id="v2N-GN-dvK"/>
+                            <constraint firstItem="KC8-Wh-G7a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xU8-jy-XlT"/>
+                            <constraint firstItem="hOZ-5n-NJ1" firstAttribute="top" secondItem="1Y4-Mg-aGY" secondAttribute="bottom" constant="287" id="yyF-cs-Vb7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UK" width="106" height="53"/>
+        <image name="Vyhledej.cz.removedBG" width="166.66667175292969" height="166.66667175292969"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
